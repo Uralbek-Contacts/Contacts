@@ -1,4 +1,4 @@
-/* Umumiy sozlamalar */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,24 +7,46 @@ body {
 }
 
 /* Header */
-header {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
-/* Container (Sidebar va Kontentni o'z ichiga oladi) */
-.container {
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+.layout {
     display: flex;
-    flex-wrap: wrap; /* Ekran kichrayganda moslashadi */
+    flex-wrap: wrap; /* Responsive design */
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: #f4f4f4;
-    width: 25%;
+    width: 20%;
+    background-color: #f1f1f1;
     padding: 1rem;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .sidebar ul {
@@ -33,7 +55,7 @@ header {
 }
 
 .sidebar ul li {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .sidebar ul li a {
@@ -47,26 +69,27 @@ header {
 
 /* Content */
 .content {
-    flex: 1; /* Bo'sh joyni egallaydi */
-    padding: 1rem;
+    flex: 1; /* Flexible width */
+    padding: 2rem;
+    background-color: #ffffff;
 }
 
 /* Footer */
-footer {
+.footer {
+    text-align: center;
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
-/* Responsiv dizayn uchun */
+/* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        width: 100%; /* Yon panel to'liq kenglikni egallaydi */
+        width: 100%;
     }
 
     .content {
-        width: 100%; /* Kontent ham to'liq kenglikka ega bo'ladi */
+        width: 100%;
     }
 }
