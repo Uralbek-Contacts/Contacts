@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukammal Veb Sahifa</title>
+    <title>W3Schools Style Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Veb Sahifam</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">MyLearnSite</div>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Tutorials</a>
+            <a href="#">References</a>
+            <a href="#">Examples</a>
+        </nav>
     </header>
 
-    <div class="container">
+    <!-- Main Layout -->
+    <div class="layout">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><a href="#">Bosh sahifa</a></li>
-                    <li><a href="#">Haqida</a></li>
-                    <li><a href="#">Xizmatlar</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+            <h2>Topics</h2>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">SQL</a></li>
+            </ul>
         </aside>
 
+        <!-- Main Content -->
         <main class="content">
-            <h2>Asosiy Kontent</h2>
-            <p>Bu yerda asosiy ma'lumotlar ko'rsatiladi. Sahifa moslashuvchan va ekran o'lchamlariga moslashadi.</p>
+            <h1>Welcome to MyLearnSite</h1>
+            <p>This is a learning website styled similarly to W3Schools. Here, you can learn web development and programming topics step by step.</p>
+            <p>Click on the topics in the sidebar to start learning!</p>
         </main>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Uralbek Veb Sahifasi. Barcha huquqlar himoyalangan.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyLearnSite. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
