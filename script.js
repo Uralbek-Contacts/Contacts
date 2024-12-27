@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Veb-sahifa muvaffaqiyatli yuklandi!");
+    console.log("Page loaded successfully!");
 });
